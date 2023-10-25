@@ -1,0 +1,123 @@
+body{
+	background-color: #F4D03F;
+}
+.titulo{
+	font-family: Arial Black;
+	text-align: center;
+}
+.tabla{
+	background-color: #CCD1D1;
+	text-align: center;
+	margin: 0 auto;
+	border-spacing: 50px;
+	border: 1px solid black;
+}
+#cuadro1 {
+	background-color: #A6ACAF;
+	border: 1px solid black;
+}
+.lamina{
+	width: 350px;
+	height: 200px;	
+}
+#cuadro2{
+	background-color: #A6ACAF;
+	border: 1px solid black;
+}
+.varilla{
+	width: 400px;
+	height: 300px;
+}
+#cuadro3{
+	background-color: #A6ACAF;
+	border: 1px solid black;
+}
+.bloque{
+	width: 300px;
+	height: 300px;
+}
+#cuadro4{
+	background-color: #A6ACAF;
+	border: 1px solid black;
+}
+.tubo{
+	width: 350px;
+	height: 200px;
+}
+#cuadro5{
+	background-color: #A6ACAF;
+	border: 1px solid black;
+}
+.tornillo{
+	width: 350px;
+	height: 200px;
+}
+#cuadro6{
+	background-color: #A6ACAF;
+	border: 1px solid black;
+}
+.madera{
+	width: 350px;
+	height: 200px;
+}
+#cuadro7{
+	background-color: #A6ACAF;
+	border: 1px solid black;
+}
+.soldadura{
+	width: 350px;
+	height: 200px;
+}
+#cuadro8{
+	background-color: #A6ACAF;
+	border: 1px solid black;
+}
+.envasado{
+	width: 350px;
+	height: 200px;
+}
+#cuadro9{
+	background-color: #A6ACAF;
+	border: 1px solid black;
+}
+.pesada{
+	width: 350px;
+	height: 200px;
+}
+#cuadro10{
+	background-color: #A6ACAF;
+	border: 1px solid black;
+}
+.taladro{
+	width: 350px;
+	height: 200px;
+}
+#cuadro11{
+	background-color: #A6ACAF;
+	border: 1px solid black;
+}
+.martillo{
+	width: 350px;
+	height: 200px;
+}
+#cuadro12{
+	background-color: #A6ACAF;
+	border: 1px solid black;
+}
+.pala{
+	width: 350px;
+	height: 200px;
+}
+.buton{
+	padding: 1rem;
+	width: 85%;
+	background-color: #F1C40F;
+	border: none;
+	outline: none;
+	color: #283747;
+	text-transform: uppercase;
+	font-size: 1,1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 5px;
+} 
