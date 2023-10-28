@@ -1,94 +1,208 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset=“Uff-8”/>   
-    <link rel="stylesheet" type="text/css" href="css/Industrial.css"> 
+	<meta charset=“Uff-8” />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
+
 <body>
-	<div class="titulo">
-		<h1>Materiales Industriales</h1>
-	 </div>
+	<header>
+		<div class="menu container">
 
-      <br/><br/><hr/><br/><br/>
+			<a href="">Logo</a>
 
-    <table class="tabla">
-    	<caption><h2>TENEMOS TODO!</h2></caption>
-    	<tr>
-    		<td id="cuadro1"><img class="lamina" src="Imagenes/laminas.WEBP">
-    			<p>LÁMINA DE FIBROCEMENTO GRIS</p>
-    			<p>100 X 183 CM 4.3 (23)</p>
-    			<p>$ 378</p>
-    			<button class="buton">Agregar al carrito</button>
-    		</td>
-    		<td id="cuadro2"><img class="varilla" src="Imagenes/VarillasAcero.PNG">
-    			<p>Varilla Corrugada 3/4"9.15 m, Pieza</p>
-    			<p>$ 400</p>
-    			<button class="buton">Agregar al carrito</button>
-    		</td>
-    		<td id="cuadro3"><img class="bloque" src="Imagenes/Bloc.WEBP">
-    			<p>Block hueco (diversos diseños) 15x20x40</p>
-    			<p>$9.50 - $10</p>
-    			<button class="buton">Agregar al carrito</button>
-    		</td>
-    	</tr>
-    	<tr>
-    		<td id="cuadro4"><img class="tubo" src="Imagenes/Tubos.WEBP">
-    			<p>Tubos Cerqueros Galvanizados</p>
-    			<p>( Altura 1.50 M, Cal.22 )</p>
-    			<p>$ 66</p>
-    			<button class="buton">Agregar al carrito</button>
-    		</td>
-    		<td id="cuadro5"><img class="tornillo" src="Imagenes/Tornillo.PNG">
-    			<p>100 PZS tornillos de cabeza Phillips #8x2"(2 inch) pulgadas,</p>
-    			 <p>tornillos autorroscantes de acero inoxidables</p>
-    			<p>$ 328</p>
-    			<button class="buton">Agregar al carrito</button>
-    		</td>
-    		<td id="cuadro6"><img class="madera" src="Imagenes/Madera.WEBP">
-    			<p>Madera Dimensionada 50mmx25cmx2.44m</p>
-    			<p>$ 559</p>
-    			<button class="buton">Agregar al carrito</button>
-    		</td>
-    	</tr>
-    	<tr>
-    		<td id="cuadro7"><img class="soldadura" src="Imagenes/Maquina soldadura.PNG">
-    			<p>Máquina de soldadura de plástico</p>
-    			<p>ultrasónico 4200W.</p>
-    			<p>$ 35,000</p>
-    			<button class="buton">Agregar al carrito</button>
-    		</td>
-    		<td id="cuadro8"><img class="envasado" src="Imagenes/MaquinadeEnvaso.PNG">
-    			<p>Máquina de envasado al vacío para uso industrial</p>
-    			<p>BT 1000-1300</p>
-    			<p>$ 45,000</p>
-    			<button class="buton">Agregar al carrito</button>
-    		</td>
-    		<td id="cuadro9"><img class="pesada" src="Imagenes/MaquinaPesada.PNG">
-    			<p>Máquina Pesada industrial</p>
-    			<p>nexxi</p>
-    			<p>$ 235,000</p>
-    			<button class="buton">Agregar al carrito</button>
-    		</td>
-    	</tr>
-    	<tr>
-    		<td id="cuadro10"><img class="taladro" src="Imagenes/Taladro.WEBP">
-    			<p>Taladro Destornillador Inalámbrico</p> 
-    			<p>Iónlitio 12v Pretul</p>
-    			<p>$ 968.75</p>
-    			<button class="buton">Agregar al carrito</button>
-    		</td>
-    		<td id="cuadro11"><img class="martillo" src="Imagenes/Martillo.PNG">
-    			<p>Martillo de uña recta de 567 g y 33 cm</p> 
-    			<p>$ 145.75</p>
-    			<button class="buton">Agregar al carrito</button>
-    		</td>
-    		<td id="cuadro12"><img class="pala" src="Imagenes/PalaCuadrada.WEBP">
-    			<p>Truper PCS-4P, Pala cuadrada</p>
-    			<p>modelo español, puño "Y", 41 1/4"</p> 
-    			<p>$ 335.40</p>
-    			<button class="buton">Agregar al carrito</button>
-    		</td>
-    	</tr>
+			<input type="checkbox" id="menu">
+			<label for="menu"><img src="menu.png" class="menu-icono" alt=""></label>
+
+			<nav class="navbar">
+				<ul>
+					<li>Inicio</li>
+					<li>Nosotros</li>
+					<li>Producto</li>
+					<li>Contacto</li>
+				</ul>
+
+			</nav>
+			<div>
+
+				<ul>
+
+					<li class="submenu">
+
+						<img src="car.svg" id="img-carrito" alt="">
+
+
+						<div id="carrito">
+							<table id="lista-carrito">
+								<thead>
+									<tr>
+										<th>Imagen</th>
+										<th>Nombre</th>
+										<th>Precio</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody></tbody>
+							</table>
+							<a href="" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+						</div>
+					</li>
+
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="header-content container">
+			<div class="swiper mySwiper-1">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="header-info">
+							<div class="header-txt">
+								<h1> Varillas Corrugadas</h1>
+								<div class="prices">
+									<p class="price-1">$400</p>
+								</div>
+								<a href="#" class="btn-1">Informacion</a>
+							</div>
+						</div>
+						<div class="header-img">
+							<img src="imagenes/VarillasAcero.png" alt="">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="header-info">
+							<div class="header-txt">
+								<h1> Laminas</h1>
+								<div class="prices">
+									<p class="price-1">$378</p>
+								</div>
+								<a href="#" class="btn-1">Informacion</a>
+							</div>
+						</div>
+						<div class="header-img">
+							<img src="imagenes/laminas.jpg" alt="">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="header-info">
+							<div class="header-txt">
+								<h1> Blocks</h1>
+								<div class="prices">
+									<p class="price-1">$9.50</p>
+								</div>
+								<a href="#" class="btn-1">Informacion</a>
+							</div>
+						</div>
+						<div class="header-img">
+							<img src="imagenes/bloques.jpg" alt="">
+						</div>
+					</div>
+
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+
+
+		</div>
+
+	</header>
+
+	<table class="tabla">
+		<caption>
+			<h2>TENEMOS TODO!</h2>
+		</caption>
+		<tr>
+			<td id="cuadro1"><img class="lamina" src="Imagenes/laminas.WEBP">
+				<p>LÁMINA DE FIBROCEMENTO GRIS</p>
+				<p>100 X 183 CM 4.3 (23)</p>
+				<p>$ 378</p>
+				<button class="buton">Agregar al carrito</button>
+			</td>
+			<td id="cuadro2"><img class="varilla" src="Imagenes/VarillasAcero.PNG">
+				<p>Varilla Corrugada 3/4"9.15 m, Pieza</p>
+				<p>$ 400</p>
+				<button class="buton">Agregar al carrito</button>
+			</td>
+			<td id="cuadro3"><img class="bloque" src="Imagenes/Bloc.WEBP">
+				<p>Block hueco (diversos diseños) 15x20x40</p>
+				<p>$9.50 - $10</p>
+				<button class="buton">Agregar al carrito</button>
+			</td>
+		</tr>
+		<tr>
+			<td id="cuadro4"><img class="tubo" src="Imagenes/Tubos.WEBP">
+				<p>Tubos Cerqueros Galvanizados</p>
+				<p>( Altura 1.50 M, Cal.22 )</p>
+				<p>$ 66</p>
+				<button class="buton">Agregar al carrito</button>
+			</td>
+			<td id="cuadro5"><img class="tornillo" src="Imagenes/Tornillo.PNG">
+				<p>100 PZS tornillos de cabeza Phillips #8x2"(2 inch) pulgadas,</p>
+				<p>tornillos autorroscantes de acero inoxidables</p>
+				<p>$ 328</p>
+				<button class="buton">Agregar al carrito</button>
+			</td>
+			<td id="cuadro6"><img class="madera" src="Imagenes/Madera.WEBP">
+				<p>Madera Dimensionada 50mmx25cmx2.44m</p>
+				<p>$ 559</p>
+				<button class="buton">Agregar al carrito</button>
+			</td>
+		</tr>
+		<tr>
+			<td id="cuadro7"><img class="soldadura" src="Imagenes/Maquina soldadura.PNG">
+				<p>Máquina de soldadura de plástico</p>
+				<p>ultrasónico 4200W.</p>
+				<p>$ 35,000</p>
+				<button class="buton">Agregar al carrito</button>
+			</td>
+			<td id="cuadro8"><img class="envasado" src="Imagenes/MaquinadeEnvaso.PNG">
+				<p>Máquina de envasado al vacío para uso industrial</p>
+				<p>BT 1000-1300</p>
+				<p>$ 45,000</p>
+				<button class="buton">Agregar al carrito</button>
+			</td>
+			<td id="cuadro9"><img class="pesada" src="Imagenes/MaquinaPesada.PNG">
+				<p>Máquina Pesada industrial</p>
+				<p>nexxi</p>
+				<p>$ 235,000</p>
+				<button class="buton">Agregar al carrito</button>
+			</td>
+		</tr>
+		<tr>
+			<td id="cuadro10"><img class="taladro" src="Imagenes/Taladro.WEBP">
+				<p>Taladro Destornillador Inalámbrico</p>
+				<p>Iónlitio 12v Pretul</p>
+				<p>$ 968.75</p>
+				<button class="buton">Agregar al carrito</button>
+			</td>
+			<td id="cuadro11"><img class="martillo" src="Imagenes/Martillo.PNG">
+				<p>Martillo de uña recta de 567 g y 33 cm</p>
+				<p>$ 145.75</p>
+				<button class="buton">Agregar al carrito</button>
+			</td>
+			<td id="cuadro12"><img class="pala" src="Imagenes/PalaCuadrada.WEBP">
+				<p>Truper PCS-4P, Pala cuadrada</p>
+				<p>modelo español, puño "Y", 41 1/4"</p>
+				<p>$ 335.40</p>
+				<button class="buton">Agregar al carrito</button>
+			</td>
+		</tr>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="script2.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"></script>
 
 </body>
+
 </html>

@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, sans-serif;
+}
+
+.cart, .products {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.cart p {
+    font-weight: bold;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="carritos.css">
+</head>
+<body>
+    <div class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+    </div>
+    <div class="products">
+        <h2>Productos</h2>
+        <ul id="product-list">
+            <li data-name="Producto 1" data-price="10">Producto 1 - $10</li>
+            <li data-name="Producto 2" data-price="20">Producto 2 - $20</li>
+            <li data-name="Producto 3" data-price="30">Producto 3 - $30</li>
+        </ul>
+    </div>
+    <form id="checkout-form">
+        <h2>Formulario de Compra</h2>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <button type="submit">Comprar</button>
+    </form>
+    <script src="function.js"></script>
+</body>
+</html>
